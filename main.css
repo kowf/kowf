@@ -1,6 +1,6 @@
 html, body {
 	font-family: helvetica, arial, sans-serif;
-	color:#424242;
+	color:#303030;
 	font-size:2.5vh;
 	font-weight: normal;
 	display: flex;
@@ -18,19 +18,28 @@ h2 {
 }
 
 h5 {
-	font-size:2.5 vh;
+	font-size:2.5vh;
 }
 
 br {
 	line-height: 2rem;
 }
 
+.section-head {
+    font-size: 4vh; font-weight: 900; 
+}
+
 a {
-	color:#424242;
+	color:#303030;
 	text-shadow: 2px 2px 5px #00e6b8;
 }
 a:hover {
 	color:#00e6b8;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
 }
 
 .content{
@@ -49,14 +58,15 @@ a:hover {
 	left: 50%;
     margin-right: -50%;
     text-align:center;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
 }
 
 .whisper { 
 	font-weight:100;
-	font-size: 0.5rem;
+	font-size: 0.8rem;
 	font-style: italic;
 }
+
 
 
 .arrow {
@@ -65,14 +75,14 @@ a:hover {
 	font-size:80px;
 }
 
+.arrow:hover{
+	text-shadow: 2px 2px 5px #303030;
+}
+
 .arrow.up {
 	top:0;
 	left:50%;
 	transform: translate(-50%,0);
-}
-
-.arrow.right:hover {
-	color:#1F70C1;
 }
 
 .arrow.right{
@@ -83,7 +93,7 @@ a:hover {
 
 .arrow.down{
 	left:50%;
-	bottom:15vh;
+	bottom:10vh;
 	transform: translate(-50%,0);
 }
 
@@ -93,6 +103,18 @@ a:hover {
 	transform: translate(0,-50%);
 }
 
+.arrow.up:hover {
+	color:#FF1A4A;
+}
+
+.arrow.right:hover {
+	color:#1F70C1;
+}
+
+.arrow.left:hover {
+	color:#F9C80E;
+}
+
 
 
 footer{
@@ -100,9 +122,10 @@ footer{
 	display: flex;
 	flex-direction: row;
 	box-sizing: border-box;
-	background-color: #424242;
-	//border-top: 1px solid #424242;
+	background-color: #303030;
+	border-top: 1px solid #eee;
 	color:#fff;
+	height:10vh;
 }
 
 footer a {
