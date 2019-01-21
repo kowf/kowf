@@ -1,8 +1,6 @@
 # TO DO LIST
 
 
-* top page (maybe about edu, background story stuff)
-* left page (maybe more personal stuff)
 * response to key press
 * response to scroll (not many people with left right scroll, but they do on mobile)
 * figure out how's it with screen reader
@@ -10,7 +8,7 @@
 * experience page make the details collapse until clicked on, add a downward triangle next to the title
 * animate the arrows to make it more fancy and show what the page is on hover
 * proof read
-*the footer isn't very well aligned vertically
+* the footer isn't very well aligned vertically
 
 
 ## will start working on sth else before doing these

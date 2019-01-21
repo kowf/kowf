@@ -1,6 +1,14 @@
+:root {
+	--accent: #00e6b8;
+	--darkText: #303030;
+	--top: #FF1A4A;
+	--right: #1F70C1;
+	--left: #F9C80E;
+}
+
 html, body {
 	font-family: helvetica, arial, sans-serif;
-	color:#303030;
+	color: var(--darkText,#303030);
 	font-size:2.5vh;
 	font-weight: normal;
 	display: flex;
@@ -29,12 +37,16 @@ br {
     font-size: 4vh; font-weight: 900; 
 }
 
+li {
+	margin: 2vh 0;
+}
+
 a {
-	color:#303030;
-	text-shadow: 2px 2px 5px #00e6b8;
+	color: var(--darkText, #303030);
+	text-shadow: 2px 2px 5px var(--accent, #00e6b8);
 }
 a:hover {
-	color:#00e6b8;
+	color:var(--accent, #00e6b8);
 }
 
 .center {
@@ -42,9 +54,14 @@ a:hover {
 	text-align: center;
 }
 
-.content{
+.content {
 	margin: 50px 10vw 50px 10vw;
 	flex: 1 0 auto;
+}
+
+.row {
+	 display: flex;
+	 flex-direction: row;
 }
 
 .fab {
@@ -62,21 +79,21 @@ a:hover {
 }
 
 .whisper { 
-	font-weight:100;
+	font-weight:200;
 	font-size: 0.8rem;
 	font-style: italic;
 }
-
 
 
 .arrow {
 	position: fixed;
 	z-index:100;
 	font-size:80px;
+	margin: ;
 }
 
 .arrow:hover{
-	text-shadow: 2px 2px 5px #303030;
+	text-shadow: 2px 2px 5px var(--darkText, #303030);
 }
 
 .arrow.up {
@@ -104,35 +121,55 @@ a:hover {
 }
 
 .arrow.up:hover {
-	color:#FF1A4A;
+	color: var(--top, #FF1A4A);
 }
 
 .arrow.right:hover {
-	color:#1F70C1;
+	color: var(--right, #1F70C1);
 }
 
 .arrow.left:hover {
-	color:#F9C80E;
+	color: var(--left, #F9C80E);
 }
 
+.arrow.down:hover {
+	color: var(--accent, #00e6b8);
+}
 
+.arrow.rotate30 {
+	transform: rotate(30deg);
+}
+
+.arrow.left-down {
+	left: 1rem;
+	bottom:15vh;
+}
+
+.arrow.right-down {
+	right: 1rem;
+	bottom:15vh;
+}
 
 footer{
-	flex-shrink: 0;
+	position: fixed;
+	left: -1px;
+	bottom:0;
 	display: flex;
 	flex-direction: row;
 	box-sizing: border-box;
-	background-color: #303030;
+	background-color: var(--darkText, #303030);
 	border-top: 1px solid #eee;
 	color:#fff;
 	height:10vh;
+	width: 100%;
+	
 }
 
 footer a {
 	color:#fff;
 }
 footer a:hover {
-	color:#00e6b8;
+	color:var(--accent, #00e6b8);
 }
 
 footer > div{

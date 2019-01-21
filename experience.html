@@ -5,9 +5,10 @@
 	<link rel="stylesheet" href="main.css">
 	<title>Kathy Ko</title>
 	<style>
-		body, a, footer { background-color:#1F70C1; color:#fff; }
-		
-	</style>
+	body { background-color: var(--right, #1F70C1);color:#fff;}
+	a {color:#fff;}
+	.arrow {color: var (--darkText, #303030);}
+</style>
 </head>
 <html>
 <body>
@@ -16,7 +17,8 @@
 
 
 		<h1>Right, what's done?</h1>
-		<div class="section-head">@Ledoads</div>
+		<span class="section-head">@Ledoads</span> March 2018 — January 2019
+
 		<div class="whisper">A warm up, and a taster, perhaps...</div>
 		<hr>
 		WordPress
@@ -26,27 +28,26 @@
 			<li>made catalog-like pages on <a href="http://themills.com.hk">themills.com.hk</a></li>
 			<li>been revamping <a href="http://ledoads.com">ledoads.com</a> to WordPress and create a learning portal for a local tutorial school that you couldn't see it live as of now</li>
 		</ul>
-		
 		AWS products
-		<div class="whisper">Just using it too</div>
-		<ul>
-			<li>deployed updates in OpsWorks</li>
-			<li>moved several WordPress sites to EC2 instances</li>
-			<li>tried out Lambda and Cloudwatch</li>
-		</ul>
-		
+				<div class="whisper">At least I know what they are for</div>
+				<ul>
+					<li>deployed updates in OpsWorks</li>
+					<li>moved several WordPress sites to EC2 instances</li>
+					<li>tried out Lambda and Cloudwatch</li>
+				</ul>
 		Miscellaneous stuff
-		<div class="whisper">"Kathy, come, I need help with this"</div>
-		<ul>
-			<li>played with Linux servers</li>
-			<li>provided office IT support</li>
-			<li>assisted project manager</li>
-			<li>provided user trainings for WordPress</li>
-			<li>done some bug fixing for <a href="http://ledoads.com">ledoads.com</a>
-		</ul>
+				<div class="whisper">"Kathy, come, I need help with this"</div>
+				<ul>
+					<li>played with Linux servers</li>
+					<li>provided office IT support</li>
+					<li>assisted project manager</li>
+					<li>provided user trainings for WordPress</li>
+					<li>done some bug fixing for <a href="http://ledoads.com">ledoads.com</a></li>
+				</ul>
+		</div>
 	</div>
-    
-<!--TODO: ughh, one day it will DRY up-->
+
+	<!--TODO: ughh, one day it will DRY up-->
 	<footer>
 		<div>
 			Kathy Ko
