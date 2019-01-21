@@ -55,7 +55,7 @@ a:hover {
 }
 
 .content {
-	margin: 50px 10vw 50px 10vw;
+	margin: 50px 10vw 13vh 10vw;
 	flex: 1 0 auto;
 }
 
@@ -90,6 +90,7 @@ a:hover {
 	z-index:100;
 	font-size:80px;
 	border-radius: 10%;
+	opacity: 0.7;
 }
 
 .arrow:hover{
@@ -110,7 +111,7 @@ a:hover {
 
 .arrow.down{
 	left:50%;
-	bottom:10vh;
+	bottom:9vh;
 	transform: translate(-50%,0);
 }
 
