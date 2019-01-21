@@ -89,7 +89,7 @@ a:hover {
 	position: fixed;
 	z-index:100;
 	font-size:80px;
-	margin: ;
+	border-radius: 10%;
 }
 
 .arrow:hover{
