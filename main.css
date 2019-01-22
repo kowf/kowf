@@ -1,3 +1,5 @@
+/*camel case for css*/
+
 :root {
 	--accent: #00e6b8;
 	--darkText: #303030;
@@ -55,7 +57,7 @@ a:hover {
 }
 
 .content {
-	margin: 50px 10vw 13vh 10vw;
+	margin: 50px 10vw 15vh 10vw;
 	flex: 1 0 auto;
 }
 
@@ -78,8 +80,9 @@ a:hover {
     transform: translate(-50%, -70%);
 }
 
-.whisper { 
-	font-weight:200;
+.whisper {
+	//ugh, too thin it's hard to see, too thick it isn't whispher at all... 
+	font-weight:400; 
 	font-size: 0.8rem;
 	font-style: italic;
 }
@@ -88,37 +91,14 @@ a:hover {
 .arrow {
 	position: fixed;
 	z-index:100;
-	font-size:80px;
+	font-size:2rem;
 	border-radius: 10%;
 	opacity: 0.7;
 }
 
 .arrow:hover{
 	text-shadow: 2px 2px 5px var(--darkText, #303030);
-}
-
-.arrow.up {
-	top:0;
-	left:50%;
-	transform: translate(-50%,0);
-}
-
-.arrow.right{
-	top:50%;
-	right:1rem;
-	transform: translate(0,-50%);
-}
-
-.arrow.down{
-	left:50%;
-	bottom:9vh;
-	transform: translate(-50%,0);
-}
-
-.arrow.left{
-	top:50%;
-	left:1rem;
-	transform: translate(0,-50%);
+	opacity: 0.9;
 }
 
 .arrow.up:hover {
@@ -137,18 +117,42 @@ a:hover {
 	color: var(--accent, #00e6b8);
 }
 
+.arrow.up {
+	top:0;
+}
+
+.arrow.right{
+	right:1rem;
+}
+
+.arrow.down{
+	bottom:9vh;
+}
+
+.arrow.left{
+	left:1rem;
+}
+
+.arrow.horMid {
+	left:50%;
+	transform: translate(-50%,0);
+}
+
+.arrow.vertMid {
+	top:50%;
+	transform: translate(0,-50%);
+}
+
+.arrow.downSub {
+	bottom:15vh;
+}
+
+.arrow.upSub {
+	top:5vh;
+}
+
 .arrow.rotate30 {
 	transform: rotate(30deg);
-}
-
-.arrow.left-down {
-	left: 1rem;
-	bottom:15vh;
-}
-
-.arrow.right-down {
-	right: 1rem;
-	bottom:15vh;
 }
 
 footer{
@@ -188,4 +192,3 @@ footer > div{
 .contact > * {
 	padding-left: 1rem;
 }
-

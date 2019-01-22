@@ -9,7 +9,7 @@
 * animate the arrows to make it more fancy and show what the page is on hover
 * proof read
 * the footer isn't very well aligned vertically
-
+* ughhhhh! I think scss could help
 
 ## will start working on sth else before doing these
 * mini map...how to do a global overlay?? could solve the footer repetition problem too
