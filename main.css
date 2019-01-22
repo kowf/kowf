@@ -92,7 +92,6 @@ a:hover {
 	position: fixed;
 	z-index:100;
 	font-size:2rem;
-	border-radius: 10%;
 	opacity: 0.7;
 }
 
@@ -139,21 +138,26 @@ a:hover {
 }
 
 .arrow.vertMid {
-	top:50%;
+	top:45%;
 	transform: translate(0,-50%);
 }
 
 .arrow.downSub {
-	bottom:15vh;
+	bottom:13vh;
 }
 
 .arrow.upSub {
-	top:5vh;
+	top:3vh;
 }
 
-.arrow.rotate30 {
+.arrow.c30 {
 	transform: rotate(30deg);
 }
+
+.arrow.ac30 {
+	transform: rotate(330deg);
+}
+
 
 footer{
 	position: fixed;
