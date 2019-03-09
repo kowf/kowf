@@ -3,9 +3,13 @@
 :root {
 	--accent: #00e6b8;
 	--darkText: #303030;
-	--top: #FF1A4A;
+	--top: #9E2436;
 	--right: #1F70C1;
 	--left: #F9C80E;
+}
+
+.view {
+	display:flex;
 }
 
 html, body {
@@ -93,15 +97,18 @@ a:hover {
 	z-index:100;
 	font-size:2rem;
 	opacity: 0.7;
-}
 
-.arrow:hover{
-	text-shadow: 2px 2px 5px var(--darkText, #303030);
-	opacity: 0.9;
-}
+	.up {
+		top:0;
+		&:hover{
+			color: var(--top, #FF1A4A);
+		}
+	}
 
-.arrow.up:hover {
-	color: var(--top, #FF1A4A);
+	&:hover{
+		text-shadow: 2px 2px 5px var(--darkText, #303030);
+		opacity: 0.9;
+	}
 }
 
 .arrow.right:hover {
@@ -114,10 +121,6 @@ a:hover {
 
 .arrow.down:hover {
 	color: var(--accent, #00e6b8);
-}
-
-.arrow.up {
-	top:0;
 }
 
 .arrow.right{

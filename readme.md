@@ -4,12 +4,8 @@
 * response to key press
 * response to scroll (not many people with left right scroll, but they do on mobile)
 * figure out how's it with screen reader
-* add corner arrow for pages (say, right page will have a arrow pointing to down page on left lower corner)
 * experience page make the details collapse until clicked on, add a downward triangle next to the title
 * animate the arrows to make it more fancy and show what the page is on hover
-* proof read
-* the footer isn't very well aligned vertically
-* ughhhhh! I think scss could help
 
 ## will start working on sth else before doing these
 * mini map...how to do a global overlay?? could solve the footer repetition problem too
