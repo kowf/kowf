@@ -1,24 +1,9 @@
-document.addEventListener('keydown', logKey);
+identity = ['a web developer','a UX enthusiast','a calligrapher','an explorer','a foodie', 'what I wanna be'];
 
-function logKey(e) {
-  switch(e.code){
-  	case 'ArrowUp':
-      var x = document.getElementsByClassName("up");
-      x[0].click();
-  		break;
-  	case 'ArrowRight':
-  		var x = document.getElementsByClassName("right");
-      x[0].click();
-  		break;
-  	case 'ArrowDown':
-  		var x = document.getElementsByClassName("down");
-      x[0].click();
-  		break;
-  	case 'ArrowLeft':
-  		var x = document.getElementsByClassName("left");
-      x[0].click();
-  		break;  
-  	default:
-  		break;		  		  		
-  }
-}
+var switchWord = (function () {
+  var i = 1;
+  return function () {if (i === identity.length) i = 0;
+      document.getElementById("whoIAm").innerHTML = identity[i++];}
+})();
+
+setInterval(switchWord, 1500);
