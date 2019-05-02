@@ -6,4 +6,4 @@ var switchWord = (function () {
       document.getElementById("whoIAm").innerHTML = identity[i++];}
 })();
 
-setInterval(switchWord, 1500);
+setInterval(switchWord, 3000);
